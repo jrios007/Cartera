@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>FACT_RECAUDO_CARTERA_MOROSA_UPDATE</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2016/10/24 11:04:04.998</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2016/10/24 11:04:04.998</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>-- Fecha: 2016/11/17
+-- Author: JFLL
+
+*************************************************************************
+Objetivo:
+----------------
+ETL  utilizado para actualizar Descripcion_Tipo_Cartera con base a 
+las actividades realizadas por los Usuarios morosos
+</note>
+      <xloc>20</xloc>
+      <yloc>20</yloc>
+      <width>410</width>
+      <heigth>147</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Pasos:
+
+Segun las metricas entregadas por PDI, se actualiza la informacion,
+cada update realiza una actualizacion para poder evidenciar cual es el 
+motivo por el cual resta en la cartera, teniendo como base la tabla
+DWH_STTM..Dim_Tipo_Cartera, que es donde tenemos la descripcion
+de cada ITem.
+Todos estos Update se realizan sobre la tabla
+[STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS
+</note>
+      <xloc>450</xloc>
+      <yloc>20</yloc>
+      <width>427</width>
+      <heigth>162</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>DWH_STTM</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>DWH_STTM</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>DWH_STTM_TEMP</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>DWH_STTM_TEMP</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qx</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransito1</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STRICT_NUMBER_38_INTERPRETATION</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransito</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransito1</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransito1</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransitoDesarollo</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransitoDesarollo</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransitoDesarollo</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_DWH</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_dwh</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_SRC</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_src</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_STA</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_sta</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STA_STTM</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>STA_STTM</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STA_STTM_TEMP</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>STA_STTM_TEMP</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+  </order>
+  <step>
+    <name>Update</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>STA_STTM</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>-- Envia los valores de morosos nuevos a la tabla valores resta
+BEGIN TRANSACTION
+
+
+
+ ---- definir concepto para cada tipo de pago
+  INSERT INTO [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS]
+           ([CONSECUTIVO_MOROSO]
+           ,[VALOR_MULTA]
+           ,[PROCESADO]
+           ,[ID_TIPO]
+           ,[ID_TIPO_AJUSTE_MENOR])
+
+
+SELECT 
+	   SCM.CONSECUTIVO_MOROSO
+      ,SCM.VALOR_MULTA AS Valor_Multa
+	  , 0 AS Procesadoa
+	  , 0 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+FROM [STA_STTM].[dbo].STA_Fact_Cartera_Generada_Mes SCM
+WHERE [ID_CLASE_ORIGEN] in (2,3,4)
+
+COMMIT
+
+/*SELECT 
+	   SCM.CONSECUTIVO_MOROSO
+      ,SCM.VALOR_MULTA AS Valor_Multa
+	  , 0 AS Procesadoa
+	  , 0 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+  FROM [STA_STTM].[dbo].STA_Fact_Cartera_Moroso SCM
+  LEFT JOIN [STA_STTM].[dbo].STA_RECAUDO_CARTERA_MOROSA RCM ON RCM.CONSECUTIVO_MOROSO = SCM.CONSECUTIVO_MOROSO
+  LEFT JOIN [STA_STTM].[dbo].STA_PAGOS_SIMIT PS ON SCM.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+  LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON SCM.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+  WHERE SCM.VIGENTE = 'N' AND VR.CONSECUTIVO_MOROSO IS NULL AND PS.CONSECUTIVO_MOROSO IS NOT NULL
+  AND CASE WHEN  RCM.FECHA_GENERACION >= (SELECT fecha_inicio FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  THEN 'S' ELSE 'N' END  = 'S'
+ UNION ALL  
+ SELECT 
+	   SCM.CONSECUTIVO_MOROSO
+      ,SCM.VALOR_MULTA AS Valor_Multa
+	  , 0 AS Procesadoa
+	  , 0 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+  FROM [STA_STTM].[dbo].STA_Fact_Cartera_Moroso SCM
+  LEFT JOIN [STA_STTM].[dbo].STA_RECAUDO_CARTERA_MOROSA RCM ON RCM.CONSECUTIVO_MOROSO = SCM.CONSECUTIVO_MOROSO
+  LEFT JOIN [STA_STTM].[dbo].STA_PAGOS_SIMIT PS ON SCM.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+  LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON SCM.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+  WHERE SCM.VIGENTE = 'N' AND VR.CONSECUTIVO_MOROSO IS NULL AND PS.CONSECUTIVO_MOROSO IS NOT NULL
+  AND CASE WHEN  RCM.FECHA_GENERACION >= (SELECT fecha_inicio FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  THEN 'S' ELSE 'N' END  = 'N'
+ UNION ALL   
+  SELECT 
+	   SCM.CONSECUTIVO_MOROSO
+      ,SCM.VALOR_MULTA AS Valor_Multa
+	  , 0 AS Procesadoa
+	  , 0 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+  FROM [STA_STTM].[dbo].STA_Fact_Cartera_Moroso SCM
+  LEFT JOIN [STA_STTM].[dbo].STA_RECAUDO_CARTERA_MOROSA RCM ON RCM.CONSECUTIVO_MOROSO = SCM.CONSECUTIVO_MOROSO
+  LEFT JOIN [STA_STTM].[dbo].STA_PAGOS_SIMIT PS ON SCM.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+  LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON SCM.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+  WHERE SCM.VIGENTE = 'N' AND VR.CONSECUTIVO_MOROSO IS NULL AND RCM.CONSECUTIVO_MOROSO IS NOT NULL
+  AND CASE WHEN  RCM.FECHA_GENERACION >= (SELECT fecha_inicio FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  THEN 'S' ELSE 'N' END  = 'S'
+ UNION ALL  
+ SELECT 
+	   SCM.CONSECUTIVO_MOROSO
+      ,SCM.VALOR_MULTA AS Valor_Multa
+	  , 0 AS Procesadoa
+	  , 0 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor       
+  FROM [STA_STTM].[dbo].STA_Fact_Cartera_Moroso SCM
+  LEFT JOIN [STA_STTM].[dbo].STA_RECAUDO_CARTERA_MOROSA RCM ON RCM.CONSECUTIVO_MOROSO = SCM.CONSECUTIVO_MOROSO
+  LEFT JOIN [STA_STTM].[dbo].STA_PAGOS_SIMIT PS ON SCM.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+  LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON SCM.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+  WHERE SCM.VIGENTE = 'N' AND VR.CONSECUTIVO_MOROSO IS NULL AND RCM.CONSECUTIVO_MOROSO IS NOT NULL
+  AND CASE WHEN  RCM.FECHA_GENERACION >= (SELECT fecha_inicio FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  THEN 'S' ELSE 'N' END  = 'N'
+*/ 
+--Actualiza el valor multa a valor pago 
+
+BEGIN TRANSACTION
+
+UPDATE FCM
+SET FCM.VALOR_MULTA =  RCM.SUMADEVALOR_LIQUIDA
+FROM [STA_STTM].[dbo].[STA_RECAUDO_CARTERA_MOROSA] RCM
+INNER JOIN [STA_STTM].[dbo].STA_Fact_Cartera_Moroso FCM ON FCM.CONSECUTIVO_MOROSO = RCM.CONSECUTIVO_MOROSO
+WHERE FCM.VIGENTE = 'N'
+AND  FCM.VALOR_MULTA &lt;&gt;  RCM.SUMADEVALOR_LIQUIDA
+
+COMMIT 
+
+
+-- Recaudo de cartera  morosa de meses anteriores (4016-0200) incluye cobro coactivo
+--BK SET FCR.Procesado = 1, FCR.ID_Tipo = 4, FCR.VALOR_MULTA_ACTUAL = RCM.SUMADEVALOR_LIQUIDA, FCR.ESTADO_COMPARENDO = 3
+BEGIN TRANSACTION
+
+---recaudo meses actual
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 64, 
+FCR.VALOR_MULTA_ACTUAL = FCR.VALOR_MULTA, 
+FCR.ESTADO_COMPARENDO = 3
+FROM [STA_STTM].[dbo].[STA_RECAUDO_CARTERA_MOROSA] RCM
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON RCM.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN STA_STTM..STA_Fact_Cartera_Generada_Mes FCGM ON FCGM.CONSECUTIVO_MOROSO = RCM.CONSECUTIVO_MOROSO
+WHERE Procesado = 0 
+
+COMMIT 
+
+
+BEGIN TRANSACTION
+
+
+---recaudo meses anteriores
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 4, FCR.VALOR_MULTA_ACTUAL = FCR.VALOR_MULTA, FCR.ESTADO_COMPARENDO = 3
+FROM [STA_STTM].[dbo].[STA_RECAUDO_CARTERA_MOROSA] RCM
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON RCM.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = RCM.CONSECUTIVO_MOROSO
+WHERE Procesado = 0 
+	--AND ES.ESTADO_MOROSO = 3
+
+COMMIT 
+
+-- Valor moroso disminuido por beneficio
+
+BEGIN TRANSACTION
+
+INSERT INTO [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS]
+           ([CONSECUTIVO_MOROSO]
+           ,[ID_USUARIO_MOROSO]
+           ,[NRO_COMPARENDO_MOROSO]
+           ,[TIPO_COMPARENDO]
+           ,[FECHA_COMPARENDO]
+           ,[NUMERO_RES]
+           ,[FECHA_RESOLUCION]
+           ,[TIPO_SANCION_MOROSO]
+           ,[VALOR_MULTA]
+           ,[ESTADO_COMPARENDO]
+           ,[NUMERO_PLACA]
+           ,[DESC_CLASE]
+           ,[DESC_SERVICIO]
+           ,[COBRO_COACTIVO]
+           ,[FECHA_COBRO_COACTIVO]
+           ,[ID_PERSONA]
+           ,[PROCESADO]
+           ,[ID_TIPO]
+           ,[ID_TIPO_AJUSTE_MENOR]
+           ,[DESCRIPCION_COMPARENDO]
+           ,[NOMBRES]
+           ,[APELLIDOS]
+           ,[DIRECCION]
+           ,[DESC_INFRACCION]
+           ,[TELEFONO]
+           ,[VALOR_MULTA_ACTUAL]
+           ,[VALOR_AJUSTE_VALOR])
+
+SELECT CVR.[CONSECUTIVO_MOROSO]
+      ,CVR.[ID_USUARIO_MOROSO]
+      ,CVR.[NRO_COMPARENDO_MOROSO]
+      ,CVR.[TIPO_COMPARENDO]
+      ,CVR.[FECHA_COMPARENDO]
+      ,CVR.[NUMERO_RES]
+      ,CVR.[FECHA_RESOLUCION]
+      ,CVR.[TIPO_SANCION_MOROSO]
+      ,CVR.[VALOR_MULTA]
+      ,CVR.[ESTADO_COMPARENDO]
+      ,CVR.[NUMERO_PLACA]
+      ,CVR.[DESC_CLASE]
+      ,CVR.[DESC_SERVICIO]
+      ,CVR.[COBRO_COACTIVO]
+      ,CVR.[FECHA_COBRO_COACTIVO]
+      ,CVR.[ID_PERSONA]
+      ,CVR.[PROCESADO]
+      ,54 as [ID_TIPO]
+      ,CVR.[ID_TIPO_AJUSTE_MENOR]
+      ,CVR.[DESCRIPCION_COMPARENDO]
+      ,CVR.[NOMBRES]
+      ,CVR.[APELLIDOS]
+      ,CVR.[DIRECCION]
+      ,CVR.[DESC_INFRACCION]
+      ,CVR.[TELEFONO]
+      ,CMB.[SUMADEVALOR_BENEFICIO] as [VALOR_MULTA_ACTUAL]
+      ,CVR.[VALOR_AJUSTE_VALOR]
+  FROM [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS] CVR
+  INNER JOIN [STA_STTM].[dbo].[STA_BENEFICIO_CARTERA_MOROSA] CMB ON CMB.[CONSECUTIVO_MOROSO] = CVR.[CONSECUTIVO_MOROSO]
+  WHERE CVR.[PROCESADO] = 1 and CVR.[ID_TIPO] = 4
+
+COMMIT 
+
+
+BEGIN TRANSACTION
+
+
+INSERT INTO [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS]
+           ([CONSECUTIVO_MOROSO]
+           ,[ID_TIPO] 
+           ,[VALOR_MULTA_ACTUAL]
+           ,[VALOR_MULTA])
+
+SELECT CMB.[CONSECUTIVO_MOROSO]
+,54 as [ID_TIPO]
+,CMB.[SUMADEVALOR_BENEFICIO] as [VALOR_MULTA_ACTUAL]
+,CMB.[SUMADEVALOR_BENEFICIO] as [VALOR_MULTA]
+FROM [STA_STTM].[dbo].[STA_BENEFICIO_CARTERA_MOROSA] CMB  
+LEFT JOIN [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS] CVR ON CMB.[CONSECUTIVO_MOROSO] = CVR.[CONSECUTIVO_MOROSO]
+WHERE CVR.[CONSECUTIVO_MOROSO] IS NULL   
+
+
+COMMIT 
+
+-- Valor actualizado pagado por beneficio
+
+BEGIN TRANSACTION
+
+UPDATE CVR 
+   SET CVR.[VALOR_MULTA_ACTUAL] = RCM.[SUMADEVALOR_PAGADO]
+FROM [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS] CVR 
+INNER JOIN [STA_STTM].[dbo].[STA_RECAUDO_CARTERA_MOROSA] RCM ON RCM.[CONSECUTIVO_MOROSO] = CVR.[CONSECUTIVO_MOROSO]
+INNER JOIN [STA_STTM].[dbo].[STA_BENEFICIO_CARTERA_MOROSA] CMB ON CMB.[CONSECUTIVO_MOROSO] = CVR.[CONSECUTIVO_MOROSO]
+WHERE [PROCESADO] = 1 and [ID_TIPO] = 4
+
+COMMIT 
+
+--Morosos meses anteriores, que celebran acuerdos de pago mes actual
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 5, FCR.VALOR_MULTA_ACTUAL = APM.VALOR_MULTA, FCR.ESTADO_COMPARENDO = 13 
+FROM [STA_STTM].[dbo].[STA_MOROSOS_ACUERDO_PAGO_MES] APM
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON APM.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = APM.CONSECUTIVO_MOROSO
+WHERE Procesado = 0  
+	--AND ES.ESTADO_MOROSO = 13
+
+COMMIT
+
+
+--Pagos a través del SIMIT de cartera morosa  (externo - AV-VILLAS) MESES ANTERIORES
+--SET FCR.Procesado = 1, FCR.ID_Tipo = 6 , FCR.VALOR_MULTA_ACTUAL = PS.VALOR_LIQUIDA, FCR.ESTADO_COMPARENDO = 3
+
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 6 , FCR.VALOR_MULTA_ACTUAL = PS.VALOR_LIQUIDA, FCR.ESTADO_COMPARENDO = 3
+FROM [STA_STTM].[dbo].STA_PAGOS_SIMIT PS
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON PS.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+WHERE Procesado = 0
+	--AND ES.ESTADO_MOROSO = 3
+
+COMMIT 
+
+
+--Pagos a través del SIMIT de cartera morosa  (externo - AV-VILLAS) MES ACTUAL
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 66 , FCR.VALOR_MULTA_ACTUAL = PS.VALOR_LIQUIDA, FCR.ESTADO_COMPARENDO = 3
+FROM [STA_STTM].[dbo].STA_PAGOS_SIMIT PS
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON PS.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN STA_STTM..STA_Fact_Cartera_Generada_Mes FCGM ON FCGM.CONSECUTIVO_MOROSO = PS.CONSECUTIVO_MOROSO
+WHERE Procesado = 0
+
+COMMIT 
+
+
+--Actos administrativos y fallo judicial que revocan multas impuestas, ya causadas
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 7 , FCR.VALOR_MULTA_ACTUAL = FCR.VALOR_MULTA, FCR.ESTADO_COMPARENDO = 25 
+FROM [STA_STTM].[dbo].STA_ACTOS_ADMINISTRATIVOS_MULTAS AD
+LEFT JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON AD.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = AD.CONSECUTIVO_MOROSO
+WHERE Procesado = 0
+	--AND ES.ESTADO_MOROSO = 25
+
+COMMIT 
+
+
+--Prescripciones de cartera  otorgadas en el mes
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 8 , FCR.VALOR_MULTA_ACTUAL = FCR.VALOR_MULTA, FCR.ESTADO_COMPARENDO = 6
+FROM [STA_STTM].[dbo].STA_PRESCRIPCIONES_CARTERA PC
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON PC.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = PC.CONSECUTIVO_MOROSO
+WHERE Procesado = 0
+	--AND ES.ESTADO_MOROSO = 6
+
+COMMIT 
+
+
+
+
+--Devoluciones morosas generadas de morosos meses anteriores
+BEGIN TRANSACTION
+
+UPDATE FCR
+SET FCR.Procesado = 1, FCR.ID_Tipo = 11 , FCR.VALOR_MULTA_ACTUAL = FCR.VALOR_MULTA, FCR.ESTADO_COMPARENDO = 15
+--select * 
+FROM [STA_STTM].[dbo].STA_DEVOLUCIONES_MOROSAS DM
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_VALORES_RESTAS FCR ON DM.CONSECUTIVO_MOROSO = FCR.CONSECUTIVO_MOROSO
+INNER JOIN [STA_STTM].[dbo].STA_FACT_CARTERA_MOROSOS_ESTADOS ES ON ES.CONSECUTIVO_MOROSO = DM.CONSECUTIVO_MOROSO
+WHERE Procesado = 0
+	--AND ES.ESTADO_MOROSO = 15
+
+COMMIT 
+
+
+
+ ---- recaudo aplicado mes anterior 
+BEGIN TRANSACTION
+
+  INSERT INTO [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS]
+           ([CONSECUTIVO_MOROSO]
+           ,[VALOR_MULTA]
+           ,[PROCESADO]
+           ,[ID_TIPO]
+           ,[ID_TIPO_AJUSTE_MENOR])
+
+
+SELECT RCM.CONSECUTIVO_MOROSO
+      ,RCM.[SUMADEVALOR_PAGADO] AS Valor_Multa
+	  , 1 AS Procesadoa
+	  , 64 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+FROM [STA_STTM].[dbo].[STA_RECAUDO_CARTERA_MOROSA] RCM
+LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON RCM.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+where  VR.CONSECUTIVO_MOROSO is null
+UNION ALL
+SELECT PS.CONSECUTIVO_MOROSO
+      ,PS.[VALOR_LIQUIDA] AS Valor_Multa
+	  , 1 AS Procesadoa
+	  , 66 AS Sk_Tipo
+      , 0 AS Id_Tipo_Ajuste_Menor
+FROM [STA_STTM].[dbo].STA_PAGOS_SIMIT PS 
+LEFT JOIN STA_STTM..STA_FACT_CARTERA_VALORES_RESTAS VR ON PS.CONSECUTIVO_MOROSO = VR.CONSECUTIVO_MOROSO
+where  VR.CONSECUTIVO_MOROSO is null
+
+COMMIT 
+
+
+BEGIN TRANSACTION
+
+
+INSERT INTO [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS]
+           ([CONSECUTIVO_MOROSO]
+           ,[VALOR_MULTA]
+           ,[PROCESADO]
+           ,[ID_TIPO]
+           ,[ID_TIPO_AJUSTE_MENOR])
+SELECT RCM.CONSECUTIVO_MOROSO
+      ,RCM.[VALOR_MULTA]
+	  , 1 AS Procesadoa
+	  , 65 AS [ID_TIPO]
+      , 0 AS Id_Tipo_Ajuste_Menor
+FROM [STA_STTM].[dbo].[STA_FACT_CARTERA_VALORES_RESTAS] RCM
+WHERE RCM.[ID_TIPO] = 61
+COMMIT </sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+      <argument>
+        <name>NRO_TRAMITE</name>
+      </argument>
+      <argument>
+        <name>NRO_RECIBO</name>
+      </argument>
+      <argument>
+        <name>ESTADO_RECIBO</name>
+      </argument>
+      <argument>
+        <name>FECHA_LIQUIDA</name>
+      </argument>
+      <argument>
+        <name>IDENTIFICADOR_SOLICITUD</name>
+      </argument>
+      <argument>
+        <name>ID_PUNTO_ATENCION</name>
+      </argument>
+      <argument>
+        <name>ID_ESTADO_SOLICITUD</name>
+      </argument>
+      <argument>
+        <name>CONSECUTIVO_MOROSOS</name>
+      </argument>
+      <argument>
+        <name>FECHA_GENERACION</name>
+      </argument>
+      <argument>
+        <name>SUMADEVALOR_PAGADO</name>
+      </argument>
+      <argument>
+        <name>SUMADEVALOR_LIQUIDA</name>
+      </argument>
+      <argument>
+        <name>Procesado</name>
+      </argument>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>

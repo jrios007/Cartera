@@ -1,0 +1,2634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>FACT_CARTERA_MOROSO_AGREGADO_CARGA</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2016/10/27 15:05:23.681</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2016/10/27 15:05:23.681</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>-- Fecha: 2016/11/16
+-- Author: JFLL
+
+*************************************************************************
+Objetivo:
+----------------
+ETL Estandar utilizado para insertar los morosos a la tabla 
+Fact_Cartera_Morosa_Agregada
+ENTRADA - SALIDA
+</note>
+      <xloc>40</xloc>
+      <yloc>30</yloc>
+      <width>521</width>
+      <heigth>200</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Pasos:
+
+Segun las metricas entregadas por PDI, se toma los datos 
+que se encuentran en la tabla [DWH_STTM].[dbo].Fact_Cartera_Moroso
+y los insertamos en la tabla [DWH_STTM].[dbo].Fact_Cartera_Moroso_Agregado
+donde realizamos una operacion matematica de una suma para tener los 
+valores y mostrarlos en el Reporte final.
+</note>
+      <xloc>592</xloc>
+      <yloc>48</yloc>
+      <width>600</width>
+      <heigth>162</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>DWH_STTM</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>DWH_STTM</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>DWH_STTM_TEMP</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>DWH_STTM_TEMP</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>QITS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>QITStransito1</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STRICT_NUMBER_38_INTERPRETATION</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qx</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransito1</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STRICT_NUMBER_38_INTERPRETATION</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransito</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransito1</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransito1</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransitoDesarollo</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>qxtransitoDesarollo</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>qxtransitoDesarollo</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_DWH</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_dwh</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_SRC</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_src</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIM_STA</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>sim_sta</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STA_STTM</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>STA_STTM</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>STA_STTM_TEMP</name>
+    <server/>
+    <type>MSSQL</type>
+    <access>JNDI</access>
+    <database>STA_STTM_TEMP</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+  </order>
+  <step>
+    <name>Execute SQL script</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DWH_STTM</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>BEGIN TRANSACTION
+
+DELETE FROM DWH_STTM..Fact_Cartera_Moroso_Agregado 
+WHERE Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                      FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+--Id_Mes_Corte = SUBSTRING(CONVERT(VARCHAR(8),GETDATE(),112),1,6)
+
+COMMIT
+
+
+---CONTRAVENCIONAL
+
+BEGIN TRANSACTION
+
+--Item en blanco de la cartera
+--NOVEDADES QUE SUMAN A LA CARTERA MOROSA:
+--NOVEDADES QUE RESTAN A LA CARTERA MOROSA:
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+SELECT (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+        FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') AS Id_Mes_Corte,
+      NULL AS  Valor_Multa,
+      sk_tipo_Cartera  
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+WHERE sk_tipo_Cartera IN (14,16) 
+
+
+
+--Ajustes cartera agregregada especiales
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT Coalesce(Id_Mes_Corte,(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')) AS Id_Mes_Corte,
+       Coalesce(SUM(CASE WHEN sk_tipo_Cartera = 65 THEN Valor_Multa * -1 ELSE Valor_Multa END ),0 ) Valor_Multa,
+       sk_tipo_Cartera    
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+    ON Car.sk_tipo_Cartera = Fac.sk_Tipo
+    AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')      
+WHERE sk_tipo_Cartera IN (58,59,60,61,62,63,64,66) 
+GROUP BY Id_Mes_Corte, sk_tipo_Cartera
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0 
+WHERE Id_Mes_Corte= 202102 and sk_Tipo in (64,61,66) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0 
+WHERE Id_Mes_Corte= 202103 and sk_Tipo in (64,61,63,66) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa - 72842767
+WHERE Id_Mes_Corte= 202407 and sk_Tipo in (61) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa - 9091 
+WHERE Id_Mes_Corte= 202407 and sk_Tipo in (64) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa - 378680031 
+WHERE Id_Mes_Corte= 202506 and sk_Tipo in (64) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa + 1
+WHERE Id_Mes_Corte= 202503 and sk_Tipo in (66) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa + 6299538
+WHERE Id_Mes_Corte= 202604 and sk_Tipo in (66) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_multa + 6673771
+WHERE Id_Mes_Corte= 202602 and sk_Tipo in (66) 
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+
+/*
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+SELECT 
+ (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') AS Id_Mes_Corte, 
+  SUM(valor_multa) AS Valor_Multa, 
+  65 as Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte =(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                      FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  
+  AND sk_tipo IN (61,66) --63
+  GROUP BY Id_Mes_Corte
+*/
+
+--Items que vienen desde la tabla general de cartera
+  --Saldo Morosos Al Mes Anterior
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                             FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') AS Id_Mes_Corte,
+     Coalesce(SUM(Valor_Multa),0 ) Valor_Multa,
+12 AS sk_tipo_Cartera  
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+LEFT JOIN DWH_STTM..Fact_Cartera_Moroso_Agregado Fac
+ON Car.sk_tipo_Cartera = Fac.sk_Tipo
+AND Id_Mes_Corte = (SELECT CASE WHEN (CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),5,2)  AS INTEGER)) -1 = 0 
+					THEN CAST( CAST( CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,4)  AS INTEGER) - 1 AS VARCHAR(4)) + '12' AS INTEGER)
+			ELSE  CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) -1	END AS ID_Mes_Corte
+		FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')      
+WHERE sk_tipo_Cartera IN (21)
+GROUP BY  sk_tipo_Cartera
+
+
+--Items que vienen desde la tabla general de cartera
+  --Cartera generada en el mes (soporte actos administrativos en firme y no pagados en el mes)
+  
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT Coalesce(Id_Mes_Corte,(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')) AS Id_Mes_Corte,
+       Coalesce(SUM(Valor_Multa),0 ) Valor_Multa,
+       sk_tipo_Cartera    
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+    ON Car.sk_tipo_Cartera = Fac.sk_Tipo
+    AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')      
+WHERE sk_tipo_Cartera IN (1) 
+GROUP BY Id_Mes_Corte, sk_tipo_Cartera
+
+
+
+--Ajustes por mayor valor a los actos administrativos ya reportados en cartera
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT Coalesce(Id_Mes_Corte,(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')) AS Id_Mes_Corte,
+       Coalesce(SUM(Valor_Multa),0 ) Valor_Multa,
+       sk_tipo_Cartera    
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+    ON Car.sk_tipo_Cartera = Fac.sk_Tipo
+    AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')      
+WHERE sk_tipo_Cartera IN (2) 
+GROUP BY Id_Mes_Corte, sk_tipo_Cartera
+
+
+--sedan
+
+update Fact_Cartera_Moroso_Agregado set Valor_Multa = 
+ (select case when sum(fcm.valor_multa)> fca.valor_9 then sum(fcm.valor_multa) -  fca.valor_9 else 0 end 
+from Fact_Cartera_Moroso fcm
+left join (select fca.Id_Mes_Corte, sum(fca.Valor_Multa) as valor_9 from Fact_Cartera_Moroso fca 
+where fca.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  and fca.Sk_Tipo = (9)
+group by id_mes_corte) fca  on fca.Id_Mes_Corte = fcm.Id_Mes_Corte 
+where fcm.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') and fcm.Sk_Tipo in (2)
+group by fcm.Id_Mes_Corte, fca.valor_9
+)
+where Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') and Sk_Tipo in (2)
+
+--sedan
+
+
+
+--INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+--(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+--SELECT TR.Id_Mes_Corte AS Id_Mes_Corte,
+--       TR.Valor_Intereses_Morosos + DO.Valor_Multa AS Valor_Multa,
+--       2 AS Sk_Tipo   
+--FROM
+--(SELECT Id_Mes_Corte, SUM(Valor_Intereses_Morosos) AS  Valor_Intereses_Morosos  
+--FROM dwh_sttm..Dim_Tipo_Cartera CAR
+--  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+--    ON Car.sk_tipo_Cartera = Fac.Id_Tipo_Ajuste_Menor
+--    AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+--                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  
+--    --AND Fac.Valor_Intereses_Morosos LIKE '%-'    
+--WHERE FAC.Id_Tipo_Ajuste_Menor = 2
+--GROUP BY Id_Mes_Corte, sk_tipo_Cartera 	
+--) TR
+--INNER JOIN 
+--(SELECT Id_Mes_Corte, SUM(Valor_Multa)  AS Valor_Multa
+--FROM dwh_sttm..Dim_Tipo_Cartera CAR
+--  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+--    ON Car.sk_tipo_Cartera = Fac.sk_Tipo
+--    AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+--                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  
+--    --AND Fac.Valor_Intereses_Morosos LIKE '%-'    
+--WHERE sk_tipo_Cartera IN (2)
+--	AND FAC.Id_Tipo_Ajuste_Menor IS NULL
+--GROUP BY Id_Mes_Corte, sk_tipo_Cartera 	
+--) DO ON DO.Id_Mes_Corte = TR.Id_Mes_Cor
+
+
+
+
+
+--Items que vienen desde la tabla general de cartera
+  --Recaudo de cartera  morosa de meses anteriores (4016-0200) incluye cobro coactivo
+  --Morosos meses anteriores, que celebran acuerdos de pago mes actual
+  --Pagos a través del SIMIT de cartera morosa  (externo - AV-VILLAS)
+  --Actos administrativos y fallo judicial que revocan multas impuestas, ya causadas
+  --Prescripciones de cartera  otorgadas en el mes
+  --Exenciones legales (Ley y Acuerdos)
+  --Devoluciones morosas generadas de morosos meses anteriores
+  --Otras novedades
+  --Saldo acuerdos pago generados al mes actual
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT Coalesce(Id_Mes_Corte,(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')) AS Id_Mes_Corte,
+       Coalesce(SUM(Valor_Multa),0 ) Valor_Multa,
+       sk_tipo_Cartera  
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+    ON Car.sk_tipo_Cartera = Fac.sk_Tipo --OR Car.sk_tipo_Cartera = Fac.Id_Tipo_Ajuste_Menor
+        AND fac.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+WHERE sk_tipo_Cartera IN (4,5,6,7,8,10,11,42,54,67)
+GROUP BY Id_Mes_Corte, sk_tipo_Cartera
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 9695343
+WHERE Id_Mes_Corte= 202501 and sk_Tipo = 11 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 4158265
+WHERE Id_Mes_Corte= 202505 and sk_Tipo = 11 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa +1747658909
+WHERE Id_Mes_Corte= 202101 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 4990524
+WHERE Id_Mes_Corte= 202102 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 3956793 - 1911850
+WHERE Id_Mes_Corte= 202103 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 4534900
+WHERE Id_Mes_Corte= 202104 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 7259907
+WHERE Id_Mes_Corte= 202105 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 872364
+WHERE Id_Mes_Corte= 202108 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 187689419
+WHERE Id_Mes_Corte= 202109 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  2527177 + 439884483
+WHERE Id_Mes_Corte= 202110 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 166610233 - 227505128
+WHERE Id_Mes_Corte= 202111 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 36854983
+WHERE Id_Mes_Corte= 202112 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 27710914
+WHERE Id_Mes_Corte= 202201 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 11849588
+WHERE Id_Mes_Corte= 202203 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 20899808
+WHERE Id_Mes_Corte= 202205 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  0
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  100990880
+WHERE Id_Mes_Corte= 202211 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  84426124
+WHERE Id_Mes_Corte= 202301 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  221924925
+WHERE Id_Mes_Corte= 202508 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 2851883364
+WHERE Id_Mes_Corte= 202601 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - Valor_Multa
+WHERE Id_Mes_Corte= 202602 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - Valor_Multa
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - Valor_Multa
+WHERE Id_Mes_Corte= 202604 and sk_Tipo = 42 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 50945632 
+WHERE Id_Mes_Corte= 202204 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 592880180 
+WHERE Id_Mes_Corte= 202207 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 412780211 
+WHERE Id_Mes_Corte= 202208 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 851933545 
+WHERE Id_Mes_Corte= 202209 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 989030465 
+WHERE Id_Mes_Corte= 202210 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 372857296
+WHERE Id_Mes_Corte= 202211 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 292663974
+WHERE Id_Mes_Corte= 202302 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 232941458
+WHERE Id_Mes_Corte= 202304 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 877506809
+WHERE Id_Mes_Corte= 202307 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 29345316702
+WHERE Id_Mes_Corte= 202308 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 27927085121
+WHERE Id_Mes_Corte= 202309 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 17650863188
+WHERE Id_Mes_Corte= 202312 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 21170304259
+WHERE Id_Mes_Corte= 202401 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 15326414035 - 19876659 
+WHERE Id_Mes_Corte= 202403 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 1107381421 
+WHERE Id_Mes_Corte= 202405 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 505825829 
+WHERE Id_Mes_Corte= 202406 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 545432759 
+WHERE Id_Mes_Corte= 202408 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 28611626853
+WHERE Id_Mes_Corte = 202410 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa+ 2357122725
+WHERE Id_Mes_Corte = 202506 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa+ 3279744
+WHERE Id_Mes_Corte = 202604 and sk_Tipo = 1
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa+ 28988011
+WHERE Id_Mes_Corte = 202604 and sk_Tipo = 2
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 18265783 
+WHERE Id_Mes_Corte= 202109 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 7981054 
+WHERE Id_Mes_Corte= 202108 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 9637351 
+WHERE Id_Mes_Corte= 202105 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1295691324 
+WHERE Id_Mes_Corte= 202102 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1255128124 
+WHERE Id_Mes_Corte= 202103 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 4055114446
+WHERE Id_Mes_Corte= 202110 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 20991011
+WHERE Id_Mes_Corte= 202111 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 4311646216
+WHERE Id_Mes_Corte= 202112 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1803194566
+WHERE Id_Mes_Corte= 202201 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 6356328
+WHERE Id_Mes_Corte= 202202 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 11726402
+WHERE Id_Mes_Corte= 202203 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 487374505
+WHERE Id_Mes_Corte= 202204 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 13368662
+WHERE Id_Mes_Corte= 202205 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 27872305
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 91379557
+WHERE Id_Mes_Corte= 202207 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 54920158
+WHERE Id_Mes_Corte= 202208 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 357957373
+WHERE Id_Mes_Corte= 202209 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 242679002
+WHERE Id_Mes_Corte= 202210 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1899954452
+WHERE Id_Mes_Corte= 202211 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 117028684
+WHERE Id_Mes_Corte= 202212 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 22521918
+WHERE Id_Mes_Corte= 202301 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 179188814
+WHERE Id_Mes_Corte= 202302 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 10823933
+WHERE Id_Mes_Corte= 202304 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 46195369
+WHERE Id_Mes_Corte= 202303 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 80768731
+WHERE Id_Mes_Corte= 202307 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 79475602
+WHERE Id_Mes_Corte= 202308 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 83936016
+WHERE Id_Mes_Corte= 202309 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 57382595
+WHERE Id_Mes_Corte= 202310 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 72167152
+WHERE Id_Mes_Corte= 202312 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 75437130
+WHERE Id_Mes_Corte= 202401 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 155155446
+WHERE Id_Mes_Corte= 202402 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado
+SET Valor_Multa = Valor_Multa + 82594313
+WHERE Id_Mes_Corte= 202403 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 34430735
+WHERE Id_Mes_Corte= 202405 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 12348081
+WHERE Id_Mes_Corte= 202406 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 813298
+WHERE Id_Mes_Corte= 202410 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 128400
+WHERE Id_Mes_Corte= 202504 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 3132985420
+WHERE Id_Mes_Corte= 202507 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 2334246970
+WHERE Id_Mes_Corte= 202508 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 2343629902
+WHERE Id_Mes_Corte= 202509 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 5177487
+WHERE Id_Mes_Corte= 202510 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 18558084
+WHERE Id_Mes_Corte= 202511 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 5466360
+WHERE Id_Mes_Corte= 202512 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 2773008829
+WHERE Id_Mes_Corte= 202601 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 2810054846
+WHERE Id_Mes_Corte= 202602 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 2930342898
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 3069660482
+WHERE Id_Mes_Corte= 202604 and sk_Tipo = 4
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1075440238
+WHERE Id_Mes_Corte= 202211 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 1102326916
+WHERE Id_Mes_Corte= 202303 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 893826324
+WHERE Id_Mes_Corte= 202304 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 2018744787
+WHERE Id_Mes_Corte= 202404 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 311529899
+WHERE Id_Mes_Corte= 202407 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 14519584
+WHERE Id_Mes_Corte= 202411 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 32420825
+WHERE Id_Mes_Corte= 202512 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 138535005
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 11829378
+WHERE Id_Mes_Corte= 202604 and sk_Tipo = 5
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 819071
+WHERE Id_Mes_Corte= 202109 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 215403475 
+WHERE Id_Mes_Corte= 202102 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  242868118
+WHERE Id_Mes_Corte= 202110 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 447554
+WHERE Id_Mes_Corte= 202111 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  209114926
+WHERE Id_Mes_Corte= 202201 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  167714848
+WHERE Id_Mes_Corte= 202202 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  241753504
+WHERE Id_Mes_Corte= 202204 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  184271749
+WHERE Id_Mes_Corte= 202205 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   195590870
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   343585020
+WHERE Id_Mes_Corte= 202208 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   296649823
+WHERE Id_Mes_Corte= 202209 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   1572821139
+WHERE Id_Mes_Corte= 202210 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   1492851599
+WHERE Id_Mes_Corte= 202301 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   1802217314
+WHERE Id_Mes_Corte= 202307 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   1266602954
+WHERE Id_Mes_Corte= 202312 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa + 555449
+WHERE Id_Mes_Corte= 202506 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   1787465399
+WHERE Id_Mes_Corte= 202508 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   2125384518
+WHERE Id_Mes_Corte= 202509 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa + 1301123
+WHERE Id_Mes_Corte= 202510 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa - 6673771
+WHERE Id_Mes_Corte= 202602 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa - 1076081
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa - 6072895
+WHERE Id_Mes_Corte= 202604 and sk_Tipo = 6
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   71529493
+WHERE Id_Mes_Corte= 202211 and sk_Tipo = 7
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa - 4351634
+WHERE Id_Mes_Corte= 202511 and sk_Tipo = 7
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =   Valor_Multa - 10943389
+WHERE Id_Mes_Corte= 202602 and sk_Tipo = 7
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 2460250
+WHERE Id_Mes_Corte= 202212 and sk_Tipo = 8
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 6269000
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 11
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 3230699613
+WHERE Id_Mes_Corte= 202212 and sk_Tipo = 13
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 10126869761 
+WHERE Id_Mes_Corte= 202601 and sk_Tipo = 17
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 12997825953
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 17
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 3731747724
+WHERE Id_Mes_Corte= 202212 and sk_Tipo = 19
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202110 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202111 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202112 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202201 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202202 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202203 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202204 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202205 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202207 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202208 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 0
+WHERE Id_Mes_Corte= 202209 and sk_Tipo = 54
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 391562999
+WHERE Id_Mes_Corte= 202307 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 535102222
+WHERE Id_Mes_Corte= 202402 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 101256051
+WHERE Id_Mes_Corte= 202403 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 5404229
+WHERE Id_Mes_Corte= 202406 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 201090695
+WHERE Id_Mes_Corte= 202407 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 12043526
+WHERE Id_Mes_Corte= 202409 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 7012270
+WHERE Id_Mes_Corte= 202412 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa - 13442636
+WHERE Id_Mes_Corte= 202502 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 342992449
+WHERE Id_Mes_Corte = 202503 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 506559390 
+WHERE Id_Mes_Corte = 202504 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 339899258 
+WHERE Id_Mes_Corte = 202506 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 538952920 
+WHERE Id_Mes_Corte = 202507 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa+198271580
+WHERE Id_Mes_Corte = 202508 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = 486133839 
+WHERE Id_Mes_Corte = 202509 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 285020172
+WHERE Id_Mes_Corte = 202510 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 203065292
+WHERE Id_Mes_Corte = 202511 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 160971281
+WHERE Id_Mes_Corte = 202512 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 266855116
+WHERE Id_Mes_Corte = 202601 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 549866334
+WHERE Id_Mes_Corte = 202602 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 448614402
+WHERE Id_Mes_Corte = 202603 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa = Valor_Multa + 124182714
+WHERE Id_Mes_Corte = 202604 and sk_Tipo = 60
+AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+
+
+--Ajuste por menor valor a actos administrativos ya reportados en cartera (actos administrativos en firme 
+
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+SELECT Coalesce(Id_Mes_Corte,(SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')) AS Id_Mes_Corte,
+       Coalesce(SUM(Valor_Multa),0 ) Valor_Multa,
+       sk_tipo_Cartera  
+FROM dwh_sttm..Dim_Tipo_Cartera CAR
+  LEFT JOIN DWH_STTM..Fact_Cartera_Moroso Fac
+    ON Car.sk_tipo_Cartera = Fac.Sk_Tipo 
+    
+    AND fac.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+WHERE sk_tipo_Cartera IN (9)
+
+GROUP BY Id_Mes_Corte, sk_tipo_Cartera	
+
+
+COMMIT
+
+
+update Fact_Cartera_Moroso_Agregado set Valor_Multa = 
+ (select case when sum(fcm.valor_multa) &lt; fca.valor_9 then fca.valor_9 - sum(fcm.valor_multa)  else 0 end 
+from Fact_Cartera_Moroso fcm
+left join (select fca.Id_Mes_Corte, sum(fca.Valor_Multa) as valor_9 from Fact_Cartera_Moroso fca 
+where fca.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  and fca.Sk_Tipo = (9)
+group by id_mes_corte) fca  on fca.Id_Mes_Corte = fcm.Id_Mes_Corte 
+where fcm.Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') and fcm.Sk_Tipo in (2)
+group by fcm.Id_Mes_Corte, fca.valor_9
+)
+where Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') and Sk_Tipo in (9)
+
+
+
+BEGIN TRANSACTION 
+
+
+
+--Saldo acuerdos pago de morosos meses anteriores -- 0.2
+
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+SELECT 
+ (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') AS Id_Mes_Corte, 
+  SUM(valor_multa) AS Valor_Multa, 
+  13 as Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte = (SELECT CASE WHEN (CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),5,2)  AS INTEGER)) -1 = 0 
+							THEN CAST( CAST( CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,4)  AS INTEGER) - 1 AS VARCHAR(4)) + '12' AS INTEGER)
+							ELSE  CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) -1	END AS ID_Mes_Corte
+   							FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+  AND sk_tipo IN (19)
+  GROUP BY Id_Mes_Corte
+  
+/*
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  4256907713
+WHERE Id_Mes_Corte= 202102 and sk_Tipo = 13 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+*/
+
+
+
+ -- CARTERA MOROSOS
+-- Saldo Cartera del mes anterior (0,1 + 0,2) -- 1.0
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+  SELECT Id_Mes_Corte , 
+  SUM(valor_multa) AS Valor_Multa, 
+  20 as Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                          FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+  AND sk_tipo IN (12,13)
+  GROUP BY Id_Mes_Corte 
+
+-- TOTAL CARTERA MOROSA GENERADA (0.1+2.1+2.2) -- 3
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+  SELECT Id_Mes_Corte, 
+  SUM(valor_multa) AS Valor_Multa, 
+  15 as Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE id_mes_corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                          FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')  
+  AND sk_tipo IN (12,1,2,58,59,60,65)
+  GROUP BY Id_Mes_Corte
+
+
+-- TOTAL NOVEDADES QUE RESTAN 4 al 11 -- 12
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+  SELECT Id_Mes_Corte , 
+  SUM(valor_multa) AS Valor_Multa, 
+  17 as Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                         FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')   
+  --AND sk_tipo IN (4, 5, 6, 7, 8, 9, 10, 11, 42,54)
+  --AND sk_tipo IN (4,54,63,64,5,6,7,8,9,10,11,42,17) --61,62, anterior a beneficio ley 2055
+  AND sk_tipo IN (4,54,67,63,64,5,6,7,8,9,10,11,42,17,61,66)
+  GROUP BY Id_Mes_Corte
+ 
+  
+-- SALDO CARTERA MOROSA DEL MES (3 - 12) -- 13
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+SELECT TR.id_mes_corte AS Id_Mes_Corte, 
+        TR.tres - DO.doce as Valor_Multa, 
+        21 AS Sk_Tipo 
+FROM 
+ ( SELECT Id_Mes_Corte, SUM(Valor_Multa) as tres
+    FROM dwh_sttm..fact_cartera_moroso_agregado 
+    WHERE id_mes_corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')    
+    AND sk_tipo = 15
+    GROUP BY Id_Mes_Corte
+  ) TR
+INNER JOIN 
+  (SELECT Id_Mes_Corte, SUM(Valor_Multa) as doce
+    FROM dwh_sttm..fact_cartera_moroso_agregado 
+    WHERE id_mes_corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')    
+    AND sk_tipo = 17
+     GROUP BY Id_Mes_Corte
+  ) DO
+ON TR.id_mes_corte = DO.id_mes_corte
+
+
+--SALDO PAGO MOROSO GENERADO AL MES ACTUAL -- 14 
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+	(Id_Mes_Corte, Valor_Multa, Sk_Tipo)
+SELECT 
+ (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER)AS ID_Mes_Corte
+                              FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') as  Id_Mes_Corte,
+  (SUM(SALDO_AP) - SUM(SALDO_AP_INT)) AS SALDO_AP_COMP_Y_MOROSOS,
+  Sk_Tipo_Cartera 
+  FROM dwh_sttm..Dim_Tipo_Cartera CAR
+	LEFT JOIN dwh_sttm..Fact_Cartera_Acuerdos_Generados_Mes_Actual  MA
+		ON CAR.Sk_Tipo_Cartera = MA.Sk_tipo
+  WHERE Sk_tipo IN (19)
+  AND ID_MES_CORTE = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+  GROUP BY Sk_Tipo_Cartera
+
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 631317700
+WHERE Id_Mes_Corte= 202101 and sk_Tipo = 19 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 140145170
+WHERE Id_Mes_Corte= 202301 and sk_Tipo = 19 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 1849910
+WHERE Id_Mes_Corte= 202406 and sk_Tipo = 19 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 79473415 + 158946830
+WHERE Id_Mes_Corte= 202411 and sk_Tipo = 19 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones') 
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 51099945
+WHERE Id_Mes_Corte= 202202 and sk_Tipo = 21 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 118
+WHERE Id_Mes_Corte= 202206 and sk_Tipo = 21 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa + 3056919418
+WHERE Id_Mes_Corte= 202603 and sk_Tipo = 21 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+--Recaudo de cartera  morosa de meses actual-- 4.2
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 2590019135
+WHERE Id_Mes_Corte= 202601 and sk_Tipo = 64 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 2620491266
+WHERE Id_Mes_Corte= 202602 and sk_Tipo = 64 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+UPDATE DWH_STTM.dbo.Fact_Cartera_Moroso_Agregado 
+SET Valor_Multa =  Valor_Multa - 2730689362
+WHERE Id_Mes_Corte= 202604 and sk_Tipo = 64 AND Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+
+
+--SALDO TOTAL CARTERA DEL MES (13+14) -- 15
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+  SELECT Id_Mes_Corte , 
+        SUM(valor_multa) AS Valor_Multa, 
+        18 AS Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')     
+  AND sk_tipo IN (19,21)
+  GROUP BY Id_Mes_Corte
+
+
+--13,1 SALDO CARTERA MOROSA DEL MES (3 - 12) -- 13
+
+
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+
+select Id_Mes_Corte , 
+  SUM(valor_multa) AS Valor_Multa, 
+  43 as Sk_Tipo 
+ from dwh_sttm..Fact_Cartera_Moroso
+where  Sk_tipo IN (1,12)
+  AND ID_MES_CORTE = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+ group by Id_Mes_Corte
+
+
+--SALDO TOTAL CARTERA DEL MES (13+14) -- 15,1
+INSERT INTO dwh_sttm..fact_cartera_moroso_agregado 
+(Id_Mes_Corte, Valor_Multa, Sk_Tipo) 
+  SELECT Id_Mes_Corte , 
+        SUM(valor_multa) AS Valor_Multa, 
+        44 AS Sk_Tipo 
+  FROM dwh_sttm..fact_cartera_moroso_agregado 
+  WHERE Id_Mes_Corte = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_Inicio,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+                           FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')     
+  AND sk_tipo IN (43,19)
+  GROUP BY Id_Mes_Corte
+
+
+
+	UPDATE STA_Def
+		SET STA_Def.VALOR_INTERESES_MOROSOS = backInteres.VALOR_INTERES
+	FROM  [DWH_STTM].[dbo].[Fact_Cartera_Moroso] STA_Def
+	INNER JOIN STA_STTM..INTERESES_MOROSOS_BACKUP backInteres
+		ON STA_Def.CONSECUTIVO_MOROSO = backInteres.CONSECUTIVO_MOROSOS AND backInteres.ID_MES_CORTE =  STA_Def.ID_MES_CORTE
+	WHERE backInteres.ID_MES_CORTE = (SELECT CAST(SUBSTRING(CONVERT(VARCHAR(8),Fecha_fin,112),1,6)  AS INTEGER) AS ID_Mes_Corte
+										  FROM dwh_sttm..Dim_Parametros WHERE id_Param = 'Cartera_Contravenciones')
+	AND STA_Def.VALOR_INTERESES_MOROSOS IS NULL OR STA_Def.VALOR_INTERESES_MOROSOS = 0 AND backInteres.VALOR_INTERES>0
+ 
+COMMIT
+  </sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
